@@ -1,0 +1,51 @@
+{
+  "title": "my kyemaps",
+  "rules": [
+    {
+      "description": "my keymaps",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": ["left_control"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": ["fn"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            { "mouse_key": { "vertical_wheel": 128 }}
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": ["fn"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            { "mouse_key": { "vertical_wheel": -128 }}
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
