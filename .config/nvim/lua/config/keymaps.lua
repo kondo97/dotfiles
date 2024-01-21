@@ -23,3 +23,12 @@ map({ "i", "x", "n", "s" }, "jj", "<Esc>", { desc = "Switch InsertMode to Normal
 -- Original Cursor control keys
 map({ "i", "x", "n", "s" }, "<C-a>", "^", { desc = "Go to top of line", remap = true })
 map({ "i", "x", "n", "s" }, "<C-e>", "$", { desc = "Go to end of line", remap = true })
+
+-- Select all
+map("n", "<C-y>", "gg<S-v>G", { desc = "Select all", remap = true })
+
+-- IncRename
+map("n", "<leader>rn", ":IncRename ", { desc = "Incremental rename", remap = true })
+
+-- Copy file relative path
+map("n", "<leader>cf", ":let @+=expand('%')<CR>", { desc = "Copy file relative path", remap = true })
